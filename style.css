@@ -52,6 +52,10 @@ header ul li a {
     text-decoration: none;
 }
 
+header ul li a:hover {
+    color: darkgreen;
+}
+
 .content {
     position: relative;
     width: 100%;
@@ -152,6 +156,7 @@ header ul li a {
     filter: invert(1);
     
 }
+
 .circle {
     position: absolute;
     top:0;
