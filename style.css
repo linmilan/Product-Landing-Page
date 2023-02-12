@@ -47,13 +47,13 @@ header ul li {
 header ul li a {
     display: inline-block;
     color: #333;
-    font-weight: 400;
+    font-weight: 500;
     margin-left: 40px;
     text-decoration: none;
 }
 
 header ul li a:hover {
-    color: darkgreen;
+    color: #017143;
 }
 
 .content {
@@ -169,14 +169,14 @@ header ul li a:hover {
 
 }
 
-
+/* img shake */
 
 .content .imgBox img:hover {
-    /* Start the shake animation and make the animation last for 0.5 seconds */
+    /* Start the shake animation and make the animation last for 0.5 seconds  */
     animation: shake 0.5s;
   
     /* When the animation is finished, start again */
-    animation-iteration-count: infinite;
+     animation-iteration-count: infinite;
   }
   
   @keyframes shake {
@@ -191,4 +191,64 @@ header ul li a:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  /* text dancing animation */
+
+  .dance span {
+    display:table-cell;
+    animation:jumb 2s infinite;
+  }
+
+  @keyframes jumb {
+    0% {
+      transform:translateY(0px)
+    }
+    50% {
+      transform:translateY(-30px);
+      
+    }
+    100% {
+      transform:translateY(0px) 
+    }
+  }
+  .dance span:nth-child(1)  {
+    animation-delay: 0s;
+  }
+
+  .dance span:nth-child(2) {
+    animation-delay:.1s;  
+  }
+  
+  .dance span:nth-child(3) {
+    animation-delay:.2s;
+  }
+  .dance span:nth-child(4) {
+    animation-delay:.3s;  
+  }
+  .dance span:nth-child(5) {
+    animation-delay:.4s;
+  }
+  .dance span:nth-child(6) {
+    animation-delay:.5s;  
+  }
+  .dance span:nth-child(7) {
+    animation-delay:.6s;
+  }
+  .dance span:nth-child(8) {
+    animation-delay:.7s;
+  }
+  .dance span:nth-child(9) {
+    animation-delay:.8s;
+  }
+
+  /* learn more button */
+  .btn {
+    opacity:0.7;
+    transition: 1s;
+    
+  }
+
+  .btn:hover {
+    opacity:1;
   }
